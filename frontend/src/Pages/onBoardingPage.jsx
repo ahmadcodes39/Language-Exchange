@@ -3,7 +3,7 @@ import { completeOnBoarding, getAuthUser } from "../lib/api.js";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 import { Camera, Globe, Shuffle } from "lucide-react";
-import useAuthUser from "../hooks/useAuthUser.jsx";
+import useAuthUser from "../hooks/useAuthUser.js";
 import { LANGUAGES } from "../constants";
 import { useNavigate } from "react-router";
 
