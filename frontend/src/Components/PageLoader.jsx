@@ -1,4 +1,4 @@
-import { useThemeStore } from "../Store/useThemeStore";
+import { useThemeStore } from "../Store/useThemeStore.js";
 
 const PageLoader = () => {
   const {theme} = useThemeStore()

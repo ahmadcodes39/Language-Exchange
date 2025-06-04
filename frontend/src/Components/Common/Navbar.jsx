@@ -1,11 +1,11 @@
 import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom"; // Added useNavigate
-import useAuthUser from "../../hooks/useAuthUser";
+import useAuthUser from "../../hooks/useAuthUser.js";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { logout } from "../../lib/api";
+import { logout } from "../../lib/api.js";
 import { BellIcon, LogOut, ShipWheel } from "lucide-react";
 import toast from "react-hot-toast"; // Added for toast notifications
-import ThemeSelector from "../ThemeSelector";
+import ThemeSelector from "../ThemeSelector.js";
 
 const Navbar = () => {
   const location = useLocation();

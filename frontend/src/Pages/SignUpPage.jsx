@@ -1,5 +1,5 @@
-import SignUp_LeftPanel from "../Components/SignUp_Components/SignUp_LeftPanel";
-import SignUp_RightPanel from "../Components/SignUp_Components/SignUp_RightPanel";
+import SignUp_LeftPanel from "../Components/SignUp_Components/SignUp_LeftPanel.jsx";
+import SignUp_RightPanel from "../Components/SignUp_Components/SignUp_RightPanel.jsx";
 
 const SignUpPage = () => {
   return (

@@ -1,6 +1,6 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import React, { useState } from 'react';
-import { signUp } from '../../lib/api';
+import { signUp } from '../../lib/api.js';
 import toast from 'react-hot-toast';
 import { ShipWheel } from 'lucide-react';
 import { Link } from 'react-router-dom';

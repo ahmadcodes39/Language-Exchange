@@ -1,5 +1,5 @@
 import React from "react";
-import { useThemeStore } from "../Store/useThemeStore";
+import { useThemeStore } from "../Store/useThemeStore.js";
 import { PaletteIcon } from "lucide-react"; // Removed Divide as it wasn't used
 import { THEMES } from "../constants";
 

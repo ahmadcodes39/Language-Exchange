@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { completeOnBoarding, getAuthUser } from "../lib/api";
+import { completeOnBoarding, getAuthUser } from "../lib/api.js";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 import { Camera, Globe, Shuffle } from "lucide-react";
-import useAuthUser from "../hooks/useAuthUser";
+import useAuthUser from "../hooks/useAuthUser.jsx";
 import { LANGUAGES } from "../constants";
 import { useNavigate } from "react-router";
 

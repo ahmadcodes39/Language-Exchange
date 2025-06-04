@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import useAuthUser from "../hooks/useAuthUser";
 import { useQuery } from "@tanstack/react-query";
-import { getStreamToken } from "../lib/api";
+import { getStreamToken } from "../lib/api.js";
 import {
   Chat,
   Channel,
@@ -14,8 +14,8 @@ import {
 } from "stream-chat-react";
 import { StreamChat } from "stream-chat";
 import toast from "react-hot-toast";
-import ChatLoader from "../Components/ChatLoader";
-import CallButton from "../Components/CallButton";
+import ChatLoader from "../Components/ChatLoader.jsx";
+import CallButton from "../Components/CallButton.jsx";
 
 const ChatPage = () => {
   const { id: targetUserId } = useParams();

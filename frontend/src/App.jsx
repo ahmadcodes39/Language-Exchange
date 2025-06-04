@@ -1,18 +1,18 @@
 import { useState } from "react";
 import { Navigate, Route, Routes } from "react-router";
-import HomePage from "./Pages/HomePage";
-import LoginPage from "./Pages/LoginPage";
-import SignUpPage from "./Pages/SignUpPage";
-import ChatPage from "./Pages/ChatPage";
-import CallPage from "./Pages/CallPage";
-import NotificationPage from "./Pages/NotificationPage";
-import OnBoardingPage from "./Pages/onBoardingPage";
-import { Toaster } from "react-hot-toast";
-import PageLoader from "./Components/PageLoader";
-import useAuthUser from "./hooks/useAuthUser";
-import Layout from "./Components/Common/Layout";
-import { useThemeStore } from "./Store/useThemeStore";
-import FriendsPage from "./Pages/FriendsPage";
+import HomePage from "./Pages/HomePage.jsx";
+import LoginPage from "./Pages/LoginPage.jsx";
+import SignUpPage from "./Pages/SignUpPage.jsx";
+import ChatPage from "./Pages/ChatPage.jsx";
+import CallPage from "./Pages/CallPage.jsx";
+import NotificationPage from "./Pages/NotificationPage.jsx";
+import OnBoardingPage from "./Pages/onBoardingPage.jsx";
+import { Toaster } from "react-hot-toast.jsx";
+import PageLoader from "./Components/PageLoader.jsx";
+import useAuthUser from "./hooks/useAuthUser.jsx";
+import Layout from "./Components/Common/Layout.jsx";
+import { useThemeStore } from "./Store/useThemeStore.jsx";
+import FriendsPage from "./Pages/FriendsPage.jsx";
 
 function App() {
   const { isLoading, authUser } = useAuthUser();

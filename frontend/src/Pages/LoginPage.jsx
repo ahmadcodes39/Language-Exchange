@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import toast from 'react-hot-toast';
-import { login } from '../lib/api';
+import { login } from '../lib/api.js';
 import { ShipWheel } from 'lucide-react';
 import { Link } from 'react-router-dom';
 

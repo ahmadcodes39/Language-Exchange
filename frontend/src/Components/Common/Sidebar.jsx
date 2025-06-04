@@ -1,5 +1,5 @@
 import React from "react";
-import useAuthUser from "../../hooks/useAuthUser";
+import useAuthUser from "../../hooks/useAuthUser.js";
 import { Link, useLocation } from "react-router";
 import { BellRing, Dot, ShipWheel } from "lucide-react";
 import { Home } from "lucide-react";

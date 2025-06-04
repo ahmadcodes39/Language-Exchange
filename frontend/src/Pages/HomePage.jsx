@@ -1,5 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { capitalize } from "../lib/utils";
+import { capitalize } from "../lib/utils.js";
 
 import { useEffect, useState } from "react";
 import {
@@ -7,11 +7,11 @@ import {
   getOutgoingFriendRequests,
   getRecommendedFriends,
   sendFriendRequest,
-} from "../lib/api";
+} from "../lib/api.js";
 
-import TopHeader from "../Components/HomePageComponents/TopHeader";
-import FriendCard from "../Components/HomePageComponents/FriendCard";
-import NoFriends from "../Components/HomePageComponents/NoFriends";
+import TopHeader from "../Components/HomePageComponents/TopHeader.jsx";
+import FriendCard from "../Components/HomePageComponents/FriendCard.jsx";
+import NoFriends from "../Components/HomePageComponents/NoFriends.jsx";
 import { LANGUAGE_TO_FLAG } from "../constants";
 import { MapPinIcon, UserPlusIcon, CheckCircleIcon } from "lucide-react";
 import toast from "react-hot-toast";
