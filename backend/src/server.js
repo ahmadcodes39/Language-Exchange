@@ -25,6 +25,10 @@ app.use('/api/auth', auth_routes);
 app.use('/api/user', user_routes);
 app.use('/api/chat', chat_routes);
 
+app.get("/", (req,res) => {
+app.send("API is running...");   
+})
+
 if (process.env.NODE_ENV ==="production") {
   app.use(express.static(path.join(__dirname,"../frontend/dist"))); // we are telling express to serve static files from the frontend build directory
   app.get("*", (req, res) => {
