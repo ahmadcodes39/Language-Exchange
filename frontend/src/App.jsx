@@ -6,7 +6,7 @@ import SignUpPage from "./Pages/SignUpPage.jsx";
 import ChatPage from "./Pages/ChatPage.jsx";
 import CallPage from "./Pages/CallPage.jsx";
 import NotificationPage from "./Pages/NotificationPage.jsx";
-import OnBoardingPage from "./Pages/onBoardingPage.jsx";
+// import OnBoardingPage from "./Pages/onBoardingPage.jsx";
 import { Toaster } from "react-hot-toast.jsx";
 import PageLoader from "./Components/PageLoader.jsx";
 import useAuthUser from "./hooks/useAuthUser.jsx";
@@ -53,7 +53,8 @@ function App() {
             element={
               isAuthenticated ? (
                 !onBoarding ? (
-                  <OnBoardingPage />
+                  // <OnBoardingPage /> ""
+                  ""
                 ) : (
                   <Navigate to={"/"} />
                 )
