@@ -5,7 +5,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { logout } from "../../lib/api.js";
 import { BellIcon, LogOut, ShipWheel } from "lucide-react";
 import toast from "react-hot-toast"; // Added for toast notifications
-import ThemeSelector from "../ThemeSelector.js";
+import ThemeSelector from "../ThemeSelector.jsx";
 
 const Navbar = () => {
   const location = useLocation();
