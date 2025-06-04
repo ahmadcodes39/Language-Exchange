@@ -9,7 +9,7 @@ import NotificationPage from "./Pages/NotificationPage.jsx";
 // import OnBoardingPage from "./Pages/onBoardingPage.jsx";
 import { Toaster } from "react-hot-toast";
 import PageLoader from "./Components/PageLoader.jsx";
-import useAuthUser from "./hooks/useAuthUser.jsx";
+import useAuthUser from "./hooks/useAuthUser.js";
 import Layout from "./Components/Common/Layout.jsx";
 import { useThemeStore } from "./Store/useThemeStore.jsx";
 import FriendsPage from "./Pages/FriendsPage.jsx";
