@@ -16,11 +16,11 @@ const __dirname = path.resolve();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ 
-  // origin: "https://language-exchange-upgr.vercel.app",
-  // credentials: true, 
-  methods: ["GET", "POST", "PUT", "DELETE"],
-})); 
+// app.use(cors({ 
+//   // origin: "https://language-exchange-upgr.vercel.app",
+//   // credentials: true, 
+//   methods: ["GET", "POST", "PUT", "DELETE"],
+// })); 
 app.use('/api/auth', auth_routes);
 app.use('/api/user', user_routes);
 app.use('/api/chat', chat_routes);
