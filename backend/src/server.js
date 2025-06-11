@@ -26,7 +26,7 @@ app.use('/api/user', user_routes);
 app.use('/api/chat', chat_routes);
 
 app.get("/", (req,res) => {
-app.send("API is running...");   
+res.send("API is running...");   
 })
 
 if (process.env.NODE_ENV ==="production") {
