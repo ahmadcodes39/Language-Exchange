@@ -42,7 +42,7 @@ const LoginPage = () => {
           <section className="flex justify-start items-center gap-2 mb-1">
             <ShipWheel className="size-9 text-primary" />
             <h1 className="text-3xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary tracking-wider">
-              Streamify
+              Learnify
             </h1>
           </section>
           {error && (
