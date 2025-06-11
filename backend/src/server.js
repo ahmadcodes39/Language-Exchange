@@ -17,7 +17,7 @@ const __dirname = path.resolve();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({ 
-  origin: "https://language-exchange-upgr.vercel.app/",
+  origin: "https://language-exchange-upgr.vercel.app",
   credentials: true, 
   methods: ["GET", "POST", "PUT", "DELETE"],
 })); 
