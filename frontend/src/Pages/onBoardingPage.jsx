@@ -24,11 +24,10 @@ const OnBoardingPage = () => {
     onSuccess: () => {
       toast.success("Profile onBoarded successfully");
       queryClient.invalidateQueries({ queryKey: ["authMe"] });
-      
     },
     onError: (error) => {
       toast.error(`Failed to onboard profile: ${error.message}`);
-      console.log(error.response.data.message)
+      console.log(error.response.data.message);
       // queryClient.invalidateQueries({ queryKey: ["authMe"] });
     },
   });
@@ -58,9 +57,7 @@ const OnBoardingPage = () => {
   };
 
   return (
-    <div
-      className="flex flex-col justify-center items-center bg-base-100 p-10"
-    >
+    <div className="flex flex-col justify-center items-center bg-base-100 p-10">
       <div className="card max-w-3xl bg-base-200 shadow-xl card-bordered border-primary/25">
         <div className="card-body p-6 sm:p-8">
           <h1 className="font-bold text-2xl text-gray-200 text-center">

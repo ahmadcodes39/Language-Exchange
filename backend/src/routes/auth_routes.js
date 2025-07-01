@@ -7,7 +7,7 @@ import {
 } from "../controllers/auth_controller.js";
 import { protectRoute } from "../middleware/auth_middleware.js";
 
-const router = express.Router();
+const router = express.Router(); 
 
 router.post("/signup", signup);
 router.post("/login", login);
