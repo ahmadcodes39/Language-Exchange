@@ -10,9 +10,8 @@ import path from "path";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
-const __dirname = path.resolve();
+// const __dirname = path.resolve();
 
 app.use(
   cors({
@@ -26,6 +25,7 @@ app.use(
 );
 
 app.options("*", cors()); // allow preflight for all routes
+const PORT = process.env.PORT || 3000;
 
 
 app.use(express.json());
