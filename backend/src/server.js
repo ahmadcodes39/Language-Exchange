@@ -16,14 +16,17 @@ const __dirname = path.resolve();
 
 app.use(
   cors({
-   origin: [
-  "https://language-exchange-upgr.vercel.app", // frontend
-  "http://localhost:5173" // local dev
-],
+    origin: [
+      "https://language-exchange-upgr.vercel.app", // frontend prod
+      "http://localhost:5173" // local dev
+    ],
     credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   })
 );
+
+app.options("*", cors()); // allow preflight for all routes
+
 
 app.use(express.json());
 app.use(cookieParser());
