@@ -16,10 +16,10 @@ const __dirname = path.resolve();
 
 app.use(
   cors({
-    origin: [
-      "https://language-exchange-upgr.vercel.app",
-      "http://localhost:5173",
-    ],
+   origin: [
+  "https://language-exchange-upgr.vercel.app", // frontend
+  "http://localhost:5173" // local dev
+],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
